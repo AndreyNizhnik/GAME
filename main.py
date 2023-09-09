@@ -21,7 +21,7 @@ def check_winner(status):
             if button_list[c][r].cget("text") == status:
                 win +=1
         if win == 3:
-            print(f"WINNER! TEST 1 = {status, c, r, win}")
+            # print(f"WINNER! TEST 1 = {status, c, r, win}")
             button_list[c][r].config(bg="light green")
             button_list[c][r-1].config(bg="light green")
             button_list[c][r-2].config(bg="light green")
@@ -36,7 +36,7 @@ def check_winner(status):
             if button_list[c][r].cget("text") == status:
                 win += 1
         if win == 3:
-            print(f"WINNER! TEST 2 = {status, c, r, win}")
+            # print(f"WINNER! TEST 2 = {status, c, r, win}")
             button_list[c][r].config(bg="light green")
             button_list[c-1][r].config(bg="light green")
             button_list[c-2][r].config(bg="light green")
@@ -50,7 +50,7 @@ def check_winner(status):
         if button_list[i][i].cget("text") == status:
             win += 1
     if win == 3:
-        print(f"WINNER! TEST 3 = {status, c, r, win}")
+        # print(f"WINNER! TEST 3 = {status, c, r, win}")
         button_list[i][i].config(bg="light green")
         button_list[i-1][i-1].config(bg="light green")
         button_list[i-2][i-2].config(bg="light green")
@@ -64,7 +64,7 @@ def check_winner(status):
         if button_list[i][(2-i)].cget("text") == status:
             win += 1
     if win == 3:
-        print(f"WINNER! TEST 4 = {status, c, r, win}")
+        # print(f"WINNER! TEST 4 = {status, c, r, win}")
         button_list[i][2-i].config(bg="light green")
         button_list[i-1][2-i+1].config(bg="light green")
         button_list[i-2][2-i+2].config(bg="light green")
